@@ -1,0 +1,8 @@
+{
+  "name": "todo-app-mongodb",
+  "version": "1.0.0",
+  "description": "Node.js with MongoDB",
+  "main": "index.js",
+  "author": "HIRO",
+  "license": "MIT"
+}
