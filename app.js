@@ -4,6 +4,7 @@ const taskRoute = require("./routers/tasks");
 const connectDB = require("./db/connect");
 const { default: mongoose } = require("mongoose");
 require("dotenv").config();
+app.use(express.json());
 mongoose.set("strictQuery", false);
 
 const PORT = 3000;
@@ -15,7 +16,7 @@ app.use("/api/v1/tasks", taskRoute);
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URL);
-    app.listen(PORT, console.log("Nodeサーバー起動"));
+    app.listen(PORT, console.log("Nodeサーバー起動(￣∀￣)キターーーーーーーーーー!!!"));
   } catch (err) {
     console.log(err);
   }
